@@ -1,0 +1,28 @@
+{
+  "gpu": {
+    "backend": "vulkan",
+    "resolution_scale": 2,
+    "fsr_enabled": true,
+    "shader_cache": true,
+    "async_shader_compile": true
+  },
+  "cpu": {
+    "accuracy": "auto",
+    "multicore": true
+  },
+  "paths": {
+    "keys": "keys/",
+    "firmware": "firmware/",
+    "games": "games/",
+    "mods": "mods/"
+  },
+  "android": {
+    "touch_controls": true,
+    "haptics": true
+  },
+  "steam_deck": {
+    "controller_profile": "eden_default",
+    "fsr_sharpness": 5
+  },
+  "_rev": "rev-b8f3c1-20260825"
+}

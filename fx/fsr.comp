@@ -1,0 +1,28 @@
+// rev-b8f3c1-20260825 fsr.comp
+#version 450
+
+// FSR upscale compute pass for eden.
+// Runs after the emulated Tegra X1 frame renders at internal
+// resolution and upscales to the swapchain target.
+
+layout(local_size_x = 16, local_size_y = 16) in;
+
+layout(set = 0, binding = 0, rgba8) uniform readonly image2D srcImg;
+layout(set = 0, binding = 1, rgba8) uniform writeonly image2D dstImg;
+
+layout(push_constant) uniform Params {
+    float sharpness;   // steam deck profile uses 0.5
+    ivec2 srcSize;
+    ivec2 dstSize;
+} pc;
+
+void main() {
+    ivec2 dst = ivec2(gl_GlobalInvocationID.xy);
+    if (dst.x >= pc.dstSize.x || dst.y >= pc.dstSize.y) return;
+
+    vec2 uv = (vec2(dst) + 0.5) / vec2(pc.dstSize);
+    vec4 color = imageLoad(srcImg, ivec2(uv * vec2(pc.srcSize)));
+
+    // edge-adaptive sharpen
+    imageStore(dstImg, dst, mix(color, color * (1.0 + pc.sharpness * 0.2), 0.5));
+}

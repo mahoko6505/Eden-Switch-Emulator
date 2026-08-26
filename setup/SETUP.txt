@@ -1,0 +1,35 @@
+# rev-b8f3c1-20260825
+Eden Emulator - Setup
+=====================
+
+1. DOWNLOAD
+   Eden-Emulator.zip from Releases (eden emulator github official).
+   Android: install the eden emulator apk instead.
+
+2. KEYS
+   dump prod.keys and title.keys from your own Switch into keys/.
+   the eden emulator keys and firmware reddit threads and the
+   eden emulator prod keys reddit wiki explain the process.
+   keys cannot be shared legally - dump your own.
+
+3. FIRMWARE
+   firmware 18.0.0+ files go into firmware/
+   (firmware for eden emulator = standard switch firmware eden dumps).
+
+4. GAMES
+   point Eden at your dump folder. check the eden emulator
+   compatibility list wiki before reporting a title.
+
+5. PLAY
+   launch a game. vulkan backend recommended.
+   steam deck: eden_default controller profile + FSR on.
+
+UPDATES
+eden emulator nightly builds land daily - swap the executable,
+saves/keys/settings carry over.
+
+TROUBLESHOOTING
+- AMD crash: fixed in v0.22
+- TOTK audio desync: fixed in v0.22
+- slow on android: snapdragon 8 gen 1+ recommended
+- more help: eden emulator reddit community
